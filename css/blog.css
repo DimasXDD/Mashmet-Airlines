@@ -1,0 +1,110 @@
+.blog-container{
+    padding-top: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.blog-top-text{
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog-read{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    gap: 0.3vw;
+    transition: 0.5s;
+}
+
+.blog-read_hover:hover{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.blog-header_size_lg{
+    font-size: 2em;
+}
+
+.blog-header_font-weight{
+    font-weight: 900;
+}
+
+.blog-read_color{
+    color: #2f184b;
+}
+
+.blog-read__img{
+    width: 1.5vw;
+    height: 3vh;
+}
+
+.article-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3vw;
+    padding-top: 3vh;
+    justify-items: center;
+    place-items: center;
+}
+
+.article{
+    display: flex;
+    width: 18vw;
+    height: 30vh;
+}
+
+.article_hover:hover{
+    cursor: pointer;
+}
+
+.article_hover:hover{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.article_rounded{
+    border-radius: 5%;
+}
+
+.article_img{
+    background-image: url("https://a.cdn-hotels.com/gdcs/production95/d1039/1b151500-b69c-11e8-8c08-0242ac110002.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article__header{
+    width: 50%;
+}
+
+.article__header_font-size{
+    font-size: 2em;
+}
+
+.article__header_color{
+    color: white;
+}
+
+.article__header_font-weight{
+    font-weight: 900;
+}
+
+.article__location{
+    padding-top: 1vh;
+}
+
+.article__location_border{
+    border-top: white 2px solid;
+}
+
+.article__location_color{
+    color: white;
+}

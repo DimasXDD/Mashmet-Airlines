@@ -1,0 +1,57 @@
+.instruction-container{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    gap: 1vh;
+}
+
+.header_size_lg{
+    font-size: 2em;
+}
+
+.header_weight{
+    font-weight: 500;
+}
+
+.header_alignment{
+    text-align: center;
+}
+
+.steps{
+    padding-top: 3vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    place-items: center;
+}
+
+.step__img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.step__p_size_md{
+    font-size: 1em;
+}
+
+.step__p_alignment{
+    text-align: center;
+}
+
+.steps__arrow{
+    width: 100px;
+    height: 50px;
+}
+
+.text_padding{
+    padding-bottom: 5vh;
+}

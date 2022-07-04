@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--ДЛЯ СЕБЯ ИЗ БУДУЩЕГО! Во-первых, привет. Во-вторых, этот сайт не доделан, его нужно адаптировать под мобилки и средние экраны.
+         В-третьих, сделай это и попутно поизучай имеющийся код, вспомнишь что да как. В-четвёртых, удачи! :)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashmet Airlines</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/vacation.css">
+    <link rel="stylesheet" href="css/promo.css">
+    <link rel="stylesheet" href="css/instruction.css">
+    <link rel="stylesheet" href="css/flights.css">
+    <link rel="stylesheet" href="css/careblocks.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="icon" href="src/icon.png">
+</head>
+<body>
+    <section class="popup">
+        <div class="popup-container popup-container_borders">
+            <div class="popup-top">
+                <h3 class="popup-top__header popup-top__header_font_weight popup-top__header_font_size">Sample text</h3>
+                <button class="popup-top__exit popup-top__exit_color popup-top__exit_font_size popup-top__exit_hover" onclick="popupCloseBtn()">X</button>
+            </div>
+            <div class="popup-mid">
+                <p class="popup-mid__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis pariatur obcaecati quaerat provident!</p>
+            </div>
+            <div class="popup-bot">
+                <button onclick="popupEasterEgg()" class="popup-bot__btn popup-bot__btn_color popup-bot__btn_hover popup-bot__btn_padding popup-bot__btn_alignment">Попробовать ещё раз</button>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="logo" href="index.html">
+                <img class="logo__img logo__img_md" src="src/navbar/logo.png">
+            </a>
+            <ul class="info">
+                <li><a class="info__a info__a_text_sm info__a_text_weight info__a_hover">Покупка билетов</a></li>
+                <li><a class="info__a info__a_text_sm info__a_text_weight info__a_hover">Информация</a></li>
+                <li><a class="info__a info__a_text_sm info__a_text_weight info__a_hover">Самолёты</a></li>
+                <li><a class="info__a info__a_text_sm info__a_text_weight info__a_hover">Приколы</a></li>
+            </ul>
+            <div class="account account_hover">
+                <a class="account__search" href="index.html"><img class="account__img account__img_sm account__img_rounded" src="src/navbar/user.png"></a>
+            </div>
+        </div>
+    </nav>
+    <section class="vacation">
+        <div class="vacation-container">
+            <div class="headers">
+                <h1 class="headers__h1 headers_alignment headers_size_lg headers_purple headers_weight">Добро пожаловать в отпуск</h1>
+                <h6 class="headers__h6 headers_size_sm">Получайте бонусы за покупки у партнёров Mashmet Airlines</h6>
+            </div>
+            <img class="image image_large image_rounded" src="src/vacation/vacation.jpg">
+        </div>
+    </section>
+    <section class="promo">
+        <div class="promo-container">
+            <p class="text text_size_sm text_alignment"> Пора вспоминать, что значит отдыхать. 
+                Отправитесь ли вы в Воронеж или дадите себе наконец расслабиться в Коломне; 
+                попытаетесь открыть для себя неизведанный мир 
+                или решите поправить настроение в теплом Иркутске 
+                — мы подготовили инструкцию на все случаи отдыха в России.</p>
+            <p class="text text_size_sm text_alignment">А еще вдвойне приятно бронировать отели на dimasidnev.epizy.com — за это вы получите <span onclick="popupSummonLowpriority()" class="text__span text__span_bold text__span_color text__span_hover">в два раза больше бонусов</span>.</p>
+        </div>
+    </section>
+    <section class="instruction">
+        <div class="instruction-container">
+            <h2 class="header header_size_lg header_weight header_alignment">Добро пожаловать в отпуск.<br>
+                Выбирайте, где отдохнуть</h2>
+            <div class="steps">
+                <div class="step-1">
+                    <img class="step__img" src="src/instruction/step1.svg">
+                    <p class="step__p step__p_size_md step__p_alignment">Зайдите на сайт с помощью девайса</p>
+                </div>
+                <img class="steps__arrow" src="src/instruction/arrow.png">
+                <div class="step-2">
+                    <img class="step__img" src="src/instruction/step 2.svg">
+                    <p class="step__p step__p_size_md step__p_alignment">Выбирайте куда полететь и начинайте собирать вещи</p>
+                </div>
+                <img class="steps__arrow" src="src/instruction/arrow.png">
+                <div class="step-3">
+                    <img class="step__img" src="src/instruction/step3.svg">
+                    <p class="step__p step__p_size_md step__p_alignment">Приготовьтесь к полёту</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flights">
+        <div class="flights-container">
+            <form class="dropdowns">
+                <div class="dropdown">
+                    <button type="button" class="dropdown-btn dropdown-btn_rounded dropdown-btn_borders dropdown-btn_hover"><p class="dropdown-btn__fineprint_font-size dropdown-btn__fineprint_color">Откуда</p>
+                        <p class="dropdown-btn__location dropdown-btn__location_font-size dropdown-btn__location_font-weight">Москва</p></button>
+                    <div class="dropdown-content dropdown-content_borders">
+                        <p class="dropdown-content__text dropdown-content__text_hover" onclick="dropdownContent0()">Воронеж</p>
+                        <p class="dropdown-content__text dropdown-content__text_hover" onclick="dropdownContent1()">Москва</p>
+                        <p class="dropdown-content__text dropdown-content__text_hover" onclick="dropdownContent2()">Саратов</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="dropdown-btn dropdown-btn_rounded dropdown-btn_borders dropdown-btn_hover"><p class="dropdown-btn__fineprint_font-size dropdown-btn__fineprint_color">Куда</p>
+                        <p class="dropdown-btn__location dropdown-btn__location_font-size dropdown-btn__location_font-weight">Москва</p></button>
+                    <div class="dropdown-content dropdown-content_borders">
+                        <p class="dropdown-content__text dropdown-content__text_hover" onclick="dropdownContent3()">Воронеж</p>
+                        <p class="dropdown-content__text dropdown-content__text_hover" onclick="dropdownContent4()">Москва</p>
+                        <p class="dropdown-content__text dropdown-content__text_hover" onclick="dropdownContent5()">Саратов</p>
+                    </div>
+                </div>
+            </form>
+            <ul class="flight-list">
+                <li class="flight flight_hover">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <img class="flight__img flight__img_size" src="src/flights/right-left-arrows.png">
+                    <p class="flight__p flight__p_text-bold flight__p_text-size">Максимир - Машмет</p>
+                    <p class="flight__p flight__p_text-size">от 2 228 Р.</p>
+                    <a class="flight__a flight__a_color flight__a_text-size">Купить  ></a>
+                </li>
+                <li class="flight flight_hover">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <img class="flight__img flight__img_size" src="src/flights/right-left-arrows.png">
+                    <p class="flight__p flight__p_text-bold flight__p_text-size">Максимир - Машмет</p>
+                    <p class="flight__p flight__p_text-size">от 2 228 Р.</p>
+                    <a class="flight__a flight__a_color flight__a_text-size">Купить  ></a>
+                </li>
+                <li class="flight flight_hover">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <img class="flight__img flight__img_size" src="src/flights/right-left-arrows.png">
+                    <p class="flight__p flight__p_text-bold flight__p_text-size">Максимир - Машмет</p>
+                    <p class="flight__p flight__p_text-size">от 2 228 Р.</p>
+                    <a class="flight__a flight__a_color flight__a_text-size">Купить  ></a>
+                </li>
+                <li class="flight flight_hover">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <img class="flight__img flight__img_size" src="src/flights/right-left-arrows.png">
+                    <p class="flight__p flight__p_text-bold flight__p_text-size">Максимир - Машмет</p>
+                    <p class="flight__p flight__p_text-size">от 2 228 Р.</p>
+                    <a class="flight__a flight__a_color flight__a_text-size">Купить  ></a>
+                </li>
+                <li class="flight flight_hover">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <img class="flight__img flight__img_size" src="src/flights/right-left-arrows.png">
+                    <p class="flight__p flight__p_text-bold flight__p_text-size">Максимир - Машмет</p>
+                    <p class="flight__p flight__p_text-size">от 2 228 Р.</p>
+                    <a class="flight__a flight__a_color flight__a_text-size">Купить  ></a>
+                </li>
+                <li class="flight flight_hover">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <img class="flight__img flight__img_size" src="src/flights/right-left-arrows.png">
+                    <p class="flight__p flight__p_text-bold flight__p_text-size">Максимир - Машмет</p>
+                    <p class="flight__p flight__p_text-size">от 2 228 Р.</p>
+                    <a class="flight__a flight__a_color flight__a_text-size">Купить  ></a>
+                </li>
+                <li class="flight flight_hover">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <img class="flight__img flight__img_size" src="src/flights/right-left-arrows.png">
+                    <p class="flight__p flight__p_text-bold flight__p_text-size">Максимир - Машмет</p>
+                    <p class="flight__p flight__p_text-size">от 2 228 Р.</p>
+                    <a class="flight__a flight__a_color flight__a_text-size">Купить  ></a>
+                </li>
+                <li class="flight flight_hover">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <img class="flight__img flight__img_size" src="src/flights/right-left-arrows.png">
+                    <p class="flight__p flight__p_text-bold flight__p_text-size">Максимир - Машмет</p>
+                    <p class="flight__p flight__p_text-size">от 2 228 Р.</p>
+                    <a class="flight__a flight__a_color flight__a_text-size">Купить  ></a>
+                </li>
+                <li class="flight flight_hover">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <img class="flight__img flight__img_size" src="src/flights/right-left-arrows.png">
+                    <p class="flight__p flight__p_text-bold flight__p_text-size">Максимир - Машмет</p>
+                    <p class="flight__p flight__p_text-size">от 2 228 Р.</p>
+                    <a class="flight__a flight__a_color flight__a_text-size">Купить  ></a>
+                </li>
+                <li class="flight flight_hover">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <img class="flight__img flight__img_size" src="src/flights/right-left-arrows.png">
+                    <p class="flight__p flight__p_text-bold flight__p_text-size">Максимир - Машмет</p>
+                    <p class="flight__p flight__p_text-size">от 2 228 Р.</p>
+                    <a class="flight__a flight__a_color flight__a_text-size">Купить  ></a>
+                </li>
+                <li class="flight flight_hover">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <img class="flight__img flight__img_size" src="src/flights/right-left-arrows.png">
+                    <p class="flight__p flight__p_text-bold flight__p_text-size">Максимир - Машмет</p>
+                    <p class="flight__p flight__p_text-size">от 2 228 Р.</p>
+                    <a class="flight__a flight__a_color flight__a_text-size">Купить  ></a>
+                </li>
+                <li class="flight flight_hover">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <img class="flight__img flight__img_size" src="src/flights/right-left-arrows.png">
+                    <p class="flight__p flight__p_text-bold flight__p_text-size">Максимир - Машмет</p>
+                    <p class="flight__p flight__p_text-size">от 2 228 Р.</p>
+                    <a class="flight__a flight__a_color flight__a_text-size">Купить  ></a>
+                </li>
+                <li class="cost cost_borders">
+                    <span class="flight__tooltip flight__tooltip_font-size flight__tooltip_borders flight__tooltip_bg-color flight__tooltip_text-color">Перелёт туда и обратно</span>
+                    <p class="cost__p cost__p_alignment cost__p_font-size">Указана стоимость перелета туда и обратно по минимальному тарифу с учетом всех такс и сборов.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="instruction">
+        <div class="instruction-container">
+            <h2 class="header header_size_lg header_alignment">Двойные бонусы за покупки</h2>
+            <p class="text text_size_sm text_alignment text__padding">Отели или аренда автомобилей — бронируйте у партнеров Mashmet Airlines и получайте в два раза больше бонусов.</p>
+            <div class="steps">
+                <div class="step-1">
+                    <img class="step__img" src="src/instruction/step2-1.svg">
+                    <p class="step__p step__p_size_md step__p_alignment">Совершите бронирование до 14 июня</p>
+                </div>
+                <img class="steps__arrow" src="src/instruction/arrow.png">
+                <div class="step-2">
+                    <img class="step__img" src="src/instruction/step2-2.svg">
+                    <p class="step__p step__p_size_md step__p_alignment">Воспользуйтесь услугой до 6 июля</p>
+                </div>
+                <img class="steps__arrow" src="src/instruction/arrow.png">
+                <div class="step-3">
+                    <img class="step__img" src="src/instruction/step2-3.svg">
+                    <p class="step__p step__p_size_md step__p_alignment">Приготовьтесь к отдыху</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="careblocks">
+        <div class="careblocks-container">
+            <ul class="careblock-list">
+                <li class="careblock careblock_borders careblock_hover">
+                    <div class="careblock-top careblock-top_img">
+                        <h4 class="careblock__header careblock__header_font-size careblock__header_color careblock__header_font-weight">Отели</h4>
+                        <p class="careblock__partner careblock__partner_font-size careblock__partner_color">В партнёрстве с MashmetHotel</p>
+                    </div>
+                    <div class="careblock-bottom">
+                        <p class="careblock__offer careblock__offer_font-size  careblock__offer_padding">Более 30 000 отелей</p>
+                        <p class="careblock__qualities careblock__qualities_font-size careblock__qualities_padding">Очень крутые отели.</p>
+                    </div>   
+                </li>
+                <li class="careblock careblock_borders careblock_hover">
+                    <div class="careblock-top careblock-top_img">
+                        <h4 class="careblock__header careblock__header_font-size careblock__header_color careblock__header_font-weight">Отели</h4>
+                        <p class="careblock__partner careblock__partner_font-size careblock__partner_color">В партнёрстве с MashmetHotel</p>
+                    </div>
+                    <div class="careblock-bottom">
+                        <p class="careblock__offer careblock__offer_font-size  careblock__offer_padding">Более 30 000 отелей</p>
+                        <p class="careblock__qualities careblock__qualities_font-size careblock__qualities_padding">Очень крутые отели.</p>
+                    </div>   
+                </li>
+                <li class="careblock careblock_borders careblock_hover">
+                    <div class="careblock-top careblock-top_img">
+                        <h4 class="careblock__header careblock__header_font-size careblock__header_color careblock__header_font-weight">Отели</h4>
+                        <p class="careblock__partner careblock__partner_font-size careblock__partner_color">В партнёрстве с MashmetHotel</p>
+                    </div>
+                    <div class="careblock-bottom">
+                        <p class="careblock__offer careblock__offer_font-size  careblock__offer_padding">Более 30 000 отелей</p>
+                        <p class="careblock__qualities careblock__qualities_font-size careblock__qualities_padding">Очень крутые отели.</p>
+                    </div>   
+                </li>
+                <li class="careblock careblock_borders careblock_hover">
+                    <div class="careblock-top careblock-top_img">
+                        <h4 class="careblock__header careblock__header_font-size careblock__header_color careblock__header_font-weight">Отели</h4>
+                        <p class="careblock__partner careblock__partner_font-size careblock__partner_color">В партнёрстве с MashmetHotel</p>
+                    </div>
+                    <div class="careblock-bottom">
+                        <p class="careblock__offer careblock__offer_font-size  careblock__offer_padding">Более 30 000 отелей</p>
+                        <p class="careblock__qualities careblock__qualities_font-size careblock__qualities_padding">Очень крутые отели.</p>
+                    </div>   
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="blog-container">
+            <div class="blog-top-text">
+                <h2 class="blog-header blog-header_size_lg blog-header_font-weight">Блог Mashmet Airlines</h2>
+                <p class="blog-read blog-read_hover blog-read_color">Читать блог <img class="blog-read__img" src="src/blog/read-blog-arrow.png"></p>
+            </div>
+            <ul class="article-list">
+                <li class="article article_hover article_rounded article_img">
+                    <div class="article-text">
+                        <h4 class="article__header article__header_font-weight article__header_color article__header_font-size">Архитектура машмета</h4>
+                        <p class="article__location article__location_border article__location_color">Воронеж, Россия</p>
+                    </div>
+                </li>
+                <li class="article article_hover article_rounded article_img">
+                    <div class="article-text">
+                        <h4 class="article__header article__header_font-weight article__header_color article__header_font-size">Архитектура машмета</h4>
+                        <p class="article__location article__location_border article__location_color">Воронеж, Россия</p>
+                    </div>
+                </li>
+                <li class="article article_hover article_rounded article_img">
+                    <div class="article-text">
+                        <h4 class="article__header article__header_font-weight article__header_color article__header_font-size">Архитектура машмета</h4>
+                        <p class="article__location article__location_border article__location_color">Воронеж, Россия</p>
+                    </div>
+                </li>
+                <li class="article article_hover article_rounded article_img">
+                    <div class="article-text">
+                        <h4 class="article__header article__header_font-weight article__header_color article__header_font-size">Архитектура машмета</h4>
+                        <p class="article__location article__location_border article__location_color">Воронеж, Россия</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer footer_bg-color">
+        <div class="footer-container">
+            <ul class="socials">
+                <li class="social"><a class="social__a" href=""><img class="social__img" src="src/footer/vk.png"></a></li>
+                <li class="social"><a class="social__a" href=""><img class="social__img" src="src/footer/tg.png"></a></li>
+            </ul>
+            <ul class="downloads">
+                <li class="download"><a class="download__a" href=""><img class="download__img" src="src/footer/googleplay.png"></a></li>
+                <li class="download"><a class="download__a" href=""><img class="download__img" src="src/footer/appstore.png"></a></li>
+            </ul>
+            <p class="fineprint fineprint_font-size fineprint_color">© 2022. Mashmet Airlines — Все пpава уважаем.</p>
+        </div>
+    </footer>
+    <script src="js/popup.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/flights.js"></script>
+</body>
+</html>

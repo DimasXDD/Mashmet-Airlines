@@ -1,0 +1,101 @@
+.careblocks-container{
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.careblock-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3vw;
+    justify-items: center;
+    place-items: center;
+}
+
+.careblock{
+    width: 18vw;
+    transition: 0.5s;
+}
+
+.careblock_borders{
+    border: 3px #f4effa solid;
+    border-radius: 5%;
+    z-index: 46;
+}
+
+.careblock_hover:hover{
+    cursor: pointer;
+}
+
+.careblock-top{
+    display: flex;
+    flex-direction: column;
+    place-items: start;
+    justify-content: center;    
+}
+
+.careblock-top_img{
+    background-image: url("https://digital.ihg.com/is/image/ihg/even-hotels-eugene-5405616297-4x3");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16vh;
+    width: 18vw;
+    padding: 0%;
+    margin: 0%;
+    border-top-left-radius: 7%;
+    border-top-right-radius: 7%;
+}
+
+.careblock__header{
+    z-index: 50;
+    padding-left: 1.5vw;
+}
+
+.careblock__header_font-size{
+    font-size: 2em;
+}
+
+.careblock__header_color{
+    color: white;
+}
+
+.careblock__header_font-weight{
+    font-weight: 900;
+}
+
+.careblock__partner{
+    padding-top: 0.8vh;
+    padding-left: 1.5vw;
+}
+
+.careblock__partner_font-size{
+    font-size: 0.9em;
+}
+
+.careblock__partner_color{
+    color: white;
+}
+
+.careblock-bottom{
+    justify-content: space-evenly;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+}
+
+.careblock__offer_font-size{
+    font-size: 1.5em;
+}
+
+.careblock__offer_padding{
+    padding-left: 1.3vw;
+}
+
+.careblock__qualities_font-size{
+    font-size: 0.9em;
+}
+
+.careblock__qualities_padding{
+    text-indent: 0.5vw;
+}

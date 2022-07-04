@@ -1,0 +1,52 @@
+.vacation{
+    background-color: #f4effa;
+    height: 40vh;
+    width: 100%;
+}
+
+.vacation-container{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    place-items: center;
+    height: 100%;
+}
+
+.headers{
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+    place-items: center;
+    flex-direction: column;
+}
+
+.headers_alignment{
+    text-align: center;
+}
+
+.headers_size_lg{
+    font-size: 3em;
+}
+
+.headers_purple{
+    color: #532b88;
+}
+
+.headers_weight{
+    font-weight: 900;
+}
+
+.headers_size_sm{
+    font-size: 1.2em;
+}
+
+.image_large{
+    height: 300px;
+    width: 500px;
+}
+
+.image_rounded{
+    border-radius: 5%;
+}

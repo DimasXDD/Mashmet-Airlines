@@ -1,0 +1,36 @@
+.promo-container{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    padding-top: 8vh;
+    gap: 1vh;
+}
+
+.text_size_sm{
+    font-size: 1em;
+}
+
+.text_alignment{
+    text-align: center;
+}
+
+.text__span{
+    transition: 0.3s;
+}
+
+.text__span_color{
+    color: #532b88;
+}
+
+.text__span_bold{
+    font-weight: 700;
+}
+
+.text__span_hover:hover{
+    transition: 0.3s;
+    text-decoration: underline;
+    cursor: pointer;
+}
